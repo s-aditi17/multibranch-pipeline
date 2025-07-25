@@ -3,20 +3,20 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building for main branch...'
-                sh 'echo "Main branch build"'
+                echo 'Building for develop branch...'
+                sh 'echo "Develop branch build"'
             }
         }
         stage('Test') {
             steps {
-                echo 'Running tests for main branch...'
-                sh 'echo "Main branch tests"'
+                echo 'Running tests for develop branch...'
+                sh 'echo "Develop branch tests"'
             }
         }
-        stage('Deploy') {
+        stage('Deliver') {
             steps {
-                echo 'Deploying to production...'
-                sh 'echo "Deploy to production"'
+                echo 'Delivering to staging...'
+                sh 'echo "Deliver to staging"'
             }
         }
     }
